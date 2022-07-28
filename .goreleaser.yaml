@@ -1,0 +1,23 @@
+project_name: example
+builds:
+  - env: [CGO_ENABLED=0]
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+dockers:
+- image_templates:
+    - synfm/cli-test:{{.Tag}}
+  dockerfile: Dockerfile
+nfpms:
+- maintainer: Carlos A Becker <root@carlosbecker.dev>
+  description: Sample project.
+  homepage: https://github.com/caarlos0/tasktimer
+  license: MIT
+  formats:
+  - deb
+  - rpm
+  - apk
