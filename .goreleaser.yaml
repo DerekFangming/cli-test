@@ -2,11 +2,9 @@ project_name: sp-cli
 builds:
   - goos:
       - linux
-      - windows
-      - darwin
     goarch:
-      - amd64
       - arm64
+      - amd64
 dockers:
 - image_templates:
     - synfm/cli-test:{{.Tag}}
