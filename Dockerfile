@@ -16,5 +16,6 @@ RUN apk add --no-cache \
 ADD . /app
 WORKDIR /app
 RUN ls
+RUN ls cli-test
 RUN go build .
 RUN cp sp-cli /usr/local/bin/sp
