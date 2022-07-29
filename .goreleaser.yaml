@@ -6,7 +6,6 @@ builds:
       - linux
     goarch:
       - arm64
-    gobinary: "go1.17.12"
 dockers:
 - image_templates: ["ghcr.io/goreleaser/example:{{ .Version }}"]
   dockerfile: Dockerfile
