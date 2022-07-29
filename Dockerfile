@@ -17,5 +17,7 @@ ADD . /app
 WORKDIR /app
 RUN ls
 RUN ls cli-test
+# RUN ls cli-test/cli-test
 RUN go build .
-RUN cp sp-cli /usr/local/bin/sp
+RUN cp cli-test /usr/local/bin/sp
+RUN sp conn
