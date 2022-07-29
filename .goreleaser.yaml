@@ -1,3 +1,4 @@
+project_name: sp-cli
 dockers:
 - image_templates:
     - synfm/cli-test:{{.Tag}}
