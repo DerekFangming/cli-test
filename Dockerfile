@@ -26,5 +26,5 @@ RUN stat sp-cli
 
 # RUN ls cli-test/cli-test
 # RUN go build .
-RUN cp cli-test /usr/local/bin/sp
+RUN cp sp-cli /usr/local/bin/sp
 RUN sp conn
