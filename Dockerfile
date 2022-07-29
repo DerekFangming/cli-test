@@ -1,7 +1,7 @@
 FROM golang:1.17-alpine3.14
 
 # Install node, zip, git and make
-RUN apk add --no-cache gcc libc-dev npm nodejs-current zip git openssh make
+RUN apk add --no-cache gcc libc-dev npm nodejs-current zip git openssh make file
 
 # Install aws cli
 RUN apk add --no-cache \
@@ -18,6 +18,7 @@ WORKDIR /app
 RUN ls
 RUN ls sp-cli
 RUN stat sp-cli
+RUN file sp-cli
 # RUN ./sp-cli conn
 
 # COPY sp-cli /app
