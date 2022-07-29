@@ -18,6 +18,6 @@ WORKDIR /app
 RUN ls
 RUN ls cli-test
 # RUN ls cli-test/cli-test
-RUN go build .
+# RUN go build .
 RUN cp cli-test /usr/local/bin/sp
 RUN sp conn
