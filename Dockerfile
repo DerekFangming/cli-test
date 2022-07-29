@@ -15,6 +15,6 @@ RUN apk add --no-cache \
 # Install sp cli
 ADD . /app
 WORKDIR /app
-RUN go env -w GO111MODULE=auto
+RUN ls
 RUN go build .
 RUN cp sp-cli /usr/local/bin/sp
