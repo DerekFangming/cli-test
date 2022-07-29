@@ -13,15 +13,15 @@ RUN apk add --no-cache \
     && rm -rf /var/cache/apk/*
 
 # Install sp cli
-# ADD . /app
-# WORKDIR /app
-# RUN ls
-# RUN ls sp-cli
-# RUN stat sp-cli
-# RUN ./sp-cli conn
+ADD . /app
+WORKDIR /app
+RUN ls
+RUN ls sp-cli
+RUN stat sp-cli
+RUN ./sp-cli conn
 
-COPY sp-cli /app
-ENTRYPOINT ["/app"]
+# COPY sp-cli /app
+# ENTRYPOINT ["/app"]
 
 
 # RUN ls cli-test/cli-test
