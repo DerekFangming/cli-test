@@ -18,9 +18,9 @@ WORKDIR /app
 RUN ls
 RUN ls cli-test
 RUN stat cli-test
-RUN ls cli-test/cli-test
+# RUN ls cli-test/cli-test
 # RUN ./cli-test conn
 # RUN ls cli-test/cli-test
 # RUN go build .
-RUN cp cli-test /usr/local/bin/sp
-RUN sp conn
+# RUN cp cli-test /usr/local/bin/sp
+# RUN sp conn
