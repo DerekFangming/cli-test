@@ -1,5 +1,3 @@
-project_name: example
-
 dockers:
 - image_templates:
     - synfm/cli-test:{{.Tag}}
