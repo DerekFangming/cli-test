@@ -18,7 +18,7 @@ WORKDIR /app
 RUN ls
 RUN ls sp-cli
 RUN stat sp-cli
-RUN ./sp-cli conn
+# RUN ./sp-cli conn
 
 # COPY sp-cli /app
 # ENTRYPOINT ["/app"]
@@ -26,5 +26,5 @@ RUN ./sp-cli conn
 
 # RUN ls cli-test/cli-test
 # RUN go build .
-# RUN cp cli-test /usr/local/bin/sp
-# RUN sp conn
+RUN cp cli-test /usr/local/bin/sp
+RUN sp conn
