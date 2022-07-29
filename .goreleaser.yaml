@@ -1,7 +1,6 @@
 project_name: sp-cli
 builds:
-  - binary: sp-cli
-    goos:
+  - goos:
       - linux
     goarch:
       - arm64
