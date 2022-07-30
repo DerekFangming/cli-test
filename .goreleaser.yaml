@@ -12,4 +12,4 @@ dockers:
     - synfm/cli-test:{{.Tag}}
   dockerfile: Dockerfile
   build_flag_templates:
-  - "--platform=darwin/arm64"
+  - "--platform=linux/arm64/v8"
