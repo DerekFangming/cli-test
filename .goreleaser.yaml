@@ -2,10 +2,14 @@ project_name: sp-cli
 builds:
   - goos:
       - linux
+      - windows
+      - darwin
     goarch:
-      - arm64
       - amd64
+      - arm64
 dockers:
 - image_templates:
     - synfm/cli-test:{{.Tag}}
   dockerfile: Dockerfile
+  build_flag_templates:
+  - "--platform=darwin/arm64"
