@@ -1,6 +1,7 @@
 project_name: sp-cli
 builds:
-  - goos:
+  - env: [CGO_ENABLED=0]
+    goos:
       - linux
       - windows
       - darwin
