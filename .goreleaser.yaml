@@ -11,6 +11,7 @@ builds:
 dockers:
 - image_templates:
     - synfm/cli-test:{{.Tag}}
+  use: buildx
   dockerfile: Dockerfile
   build_flag_templates:
   - "--platform=linux/amd64"
