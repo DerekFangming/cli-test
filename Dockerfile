@@ -29,3 +29,4 @@ RUN file sp-cli
 # RUN go build .
 RUN cp sp-cli /usr/local/bin/sp
 RUN sp conn
+RUN abc
