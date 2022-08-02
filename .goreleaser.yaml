@@ -10,10 +10,10 @@ builds:
       - arm64
       
 archives:
-  format: tar.gz
-  format_overrides:
-    - goos: windows
-      format: zip
+  - format: tar.gz
+    format_overrides:
+      - goos: windows
+        format: zip
 
 dockers:
 - image_templates:
